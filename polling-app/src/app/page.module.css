@@ -1,0 +1,94 @@
+.main {
+  display: flex;
+  background-color: aquamarine;
+  max-height: 40rem;
+  height: 20rem;
+  background-image: url('../../public/voteImage.jpg');
+  background-size: cover;
+  background-position: center;
+  
+  .content{
+    margin-left: auto;
+    align-self: last baseline;
+    margin-right: 1rem;
+    /* background-color: bisque; */
+    height: fit-content;
+    padding-bottom: 1rem;
+    .homeTitle{
+      color: rgb(76, 76, 76);
+    }
+    .ButtonPrimary{
+      /* height: 3rem; */
+      padding: .5rem 3rem;
+      font-size: 22px;
+      font-weight: 1000;
+      background-color: rgb(62, 62, 62);
+      color: #fff;
+      margin-right: 1rem;
+      border: 0;
+      outline: none;
+      
+    }
+    .ButtonPrimary:hover{
+      color:rgb(62, 62, 62); ;
+      background-color: #fff;;
+    }
+    .ButtonSecondary{
+      /* height: 3rem; */
+      padding: .5rem 2.5rem;
+      font-size: 22px;
+      font-weight: 1000;
+      background-color: rgb(123, 121, 121);
+      color: #fff;
+      border: 0;
+      outline: none;
+    }
+    .ButtonSecondary:hover{
+      color:rgb(168, 168, 168); ;
+      background-color: #fff;;
+    }
+  }
+}
+.polls{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+  flex-wrap: wrap;
+  /* background-color: antiquewhite; */
+
+  .pollCard{
+    height: 200px;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(58, 57, 57);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    .cardbuttons{
+      display:flex;
+      flex-direction: row;
+      gap: 1rem;
+
+
+    }
+    .cardbuttons >*{
+      padding: .5rem 1rem;
+      border-radius: 3px;
+      background-color: rgb(54, 54, 54);
+      color: #fff;
+      text-decoration: none;
+    }
+    .votebtn{
+      background-color: #fdfcfc;
+      border: 1px solid black;
+      color: #1d1c1c;
+    }
+  }
+  .pollCard:hover{
+    cursor: pointer;
+  }
+}

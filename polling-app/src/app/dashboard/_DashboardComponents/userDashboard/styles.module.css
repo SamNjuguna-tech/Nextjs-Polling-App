@@ -1,0 +1,109 @@
+.main{
+    /* background-color: aqua; */
+    .welcomeMessage{
+        font-size: 22px;
+        color: rgb(52, 52, 52);
+    }
+    .infoContainer{
+        background-color: rgb(34, 106, 169);
+        display: flex;
+        flex-direction: row;
+        align-items:center ;
+        padding: 0 1rem;
+        height: 2rem;
+        width: max-content;
+
+        .infoIcon{
+            font-size: 22px;
+            margin-right:.5rem ;
+            display: flex;
+            align-items: center;
+            color: aliceblue;
+        }
+        .infoText{
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            color: aliceblue;
+            
+        }
+    }
+
+    .votingBoard{
+        .presidentialTab{
+            margin-top: 1rem;
+            /* background-color: #D9D9D9; */
+            display: flex;
+            gap: 1rem;
+            .candidateContainer{
+                padding: .5rem 1rem;
+                /* border: 1px solid black; */
+                border-radius:5px;
+                display: flex;
+                /* justify-content: center; */
+                align-items: center;
+                flex-direction: row;
+                gap: .5rem;
+                height: fit-content;
+                width: 10rem;
+                /* background-color: aqua;  */
+               /* padding: .5rem; */
+               
+               .candidateAvatar{
+                    border-radius: 110px;
+                    /* background-color: aqua; */
+               }
+               .candidateDetails{
+                    
+                    /* background-color: beige; */
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: first baseline;
+                    align-items: first baseline;
+                    padding-bottom: 1rem;
+                    padding-left:.5rem;
+                    padding-right:.5rem;
+                    box-sizing: content-box;
+                    .candidateName{
+                        font-size: 12px;
+                    }
+                    .candidateId{
+                        margin-top: -.5rem;
+                        font-size: 10px;
+                    }
+                    .voteBTN{
+                        font-size: 10px;
+                        outline: none;
+                        border: 1px solid green;
+                        border-radius:10px;
+                        width: max-content;
+                        padding: 0 1rem;
+                        background-color:#fff;
+                        margin-top: -.5rem;
+                        
+                        
+                    }
+                    .voteBTN:disabled{
+                        font-size: 15px;
+                        outline: none;
+                        border: 1px solid rgb(68, 81, 68);
+                        border-radius:20px;
+                        width: 5rem;
+                        background-color:#fff;                        background-color: rgb(17, 198, 133,21%);
+                    }
+                    .voteBTN:hover{
+                        background-color: rgb(25, 151, 50);
+                        color: #fff;
+                    }
+                    .voteBTN:disabled:hover{
+                        
+                        cursor: not-allowed;
+
+                    }
+               }
+            }
+        }
+    }
+
+}

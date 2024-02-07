@@ -1,0 +1,75 @@
+.main{
+    /* background-color: aqua; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    /* justify-content: center; */
+    align-items: center;
+    .error{
+        color :'red';
+        width: max-content;
+        padding: 2rem 1rem;
+        /* border: 1px solid rgb(188, 8, 8); */
+        box-shadow: rgba(245, 0, 0, 0.35) 0px 5px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        
+    }
+    .error >* {
+        color: red;
+    }
+
+    .formContainer{
+        /* background-color: aqua; */
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+        gap: 2rem;
+    
+        .formLabel{
+            /* height: 3rem; */
+            /* background-color: aliceblue; */
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            /* justify-content: center; */
+            /* align-items: center; */
+            font-size: 22px;
+
+            .input{
+                /* height: 100%; */
+                flex: 1;
+                width: 30vw;
+                /* height: 3rem; */
+                font-size: 20px;
+                line-height: 1.6;
+                outline: none;
+                border-top:0 ;
+                border-right: 0;
+                border-left: 0;
+                
+            }
+            
+        }
+        .hasError{
+            border: 1px solid red;
+        }
+        .submitBtn{
+            margin-top: 2rem;
+            height: 3rem;
+            width: 200px;
+            align-self: flex-end;
+            color: rgb(228, 226, 228);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 22px;
+            font-weight: 800;
+            background-color: rgb(83, 82, 82);
+            outline: none;
+            
+        }
+    }
+}
